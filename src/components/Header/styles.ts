@@ -27,6 +27,10 @@ export const Container = styled.div`
     margin: 5px;
     color: ${props => props.theme.colors.text2};
     text-decoration: none;
+
+    :hover {
+      color: ${props => props.theme.colors.mango};
+    }
   }
 
   .switch {
