@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useContext } from 'react';
 import { Container } from './styles';
@@ -13,7 +14,15 @@ const Header: React.FC<Props> = ({ toggleTheme}) => {
   const { colors, title } = useContext(ThemeContext);
   return(
     <Container>
-      Hello world
+      <div className="logo" />
+
+      <div className="menu">
+        <div className="navigation">
+        <a href="#" className="nav">Sobre mim</a>
+        <a href="#" className="nav">Skills</a>
+        <a href="#" className="nav">Projetos</a>
+        <a href="#" className="nav">Contato</a>
+      </div>
 
       <div className="switch">
           <div className="sun" />
@@ -24,12 +33,14 @@ const Header: React.FC<Props> = ({ toggleTheme}) => {
             uncheckedIcon={false}
             height={10}
             width={40}
-            handleDiameter={15}
-            onColor={colors.secondary}
-            offColor={shade(0.15, colors.primary)}
+            handleDiameter={20}
+            onColor={colors.bluePantone}
            />
           <div className="moon" />
         </div>
+      </div>
+
+      
     </Container>
   );
 }

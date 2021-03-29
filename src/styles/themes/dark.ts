@@ -2,9 +2,14 @@
 export default {
   title: 'dark',
   colors: {
-    primary: '#C62E65',
-    secondary: '#D63AF9',
-    background: '#222',
-    text: '#fff',
+    bluePantone: '#3548BF',
+    mango: '#EEC643',
+    stroke: "#9B979F",
+      
+    background: '#141414',
+    header: '#141414',
+
+    text: '#EEF0F2',
+    text2: '#EEF0F2',
   }
 }

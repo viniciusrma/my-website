@@ -2,9 +2,15 @@
 export default {
   title: 'light',
   colors: {
-    primary: '#C62E65',
-    secondary: '#D63AF9',
-    background: '#F5F5F5',
-    text: '#333',
+
+    bluePantone: '#3548BF',
+    mango: '#EEC643',
+    stroke: "#0B2653",
+      
+    background: '#EEF0F2',
+    header: '#3548BF',
+
+    text: '#141414',
+    text2: '#EEF0F2',
   }
 }
