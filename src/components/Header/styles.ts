@@ -1,9 +1,19 @@
 import styled from 'styled-components';
-import logo from '../../assets/logo.svg';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
+import logo from '../../assets/icons/logo.svg';
+import sun from '../../assets/icons/sun.svg';
+import moon from '../../assets/icons/moon.svg';
 
 export const Container = styled.div`
+
+  @media only screen and (max-width: 360px) {
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: 414px) {
+    padding: 0 20px;
+  }
+
+
   height: 80px;
   background: ${props => props.theme.colors.header};
   color: ${props => props.theme.colors.text};
@@ -15,12 +25,29 @@ export const Container = styled.div`
   font-size: 15px;
   font-weight: 600;
 
-  .menu {
-    display: flex;
+  .logo {
+    background-image: url(${logo});
+    height: 33px;
+    width: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+
+    @media only screen and (max-width: 360px) {
+      background: none;
+    }
   }
 
   .navigation {
-    margin-right: 20px;
+    margin-right: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 360px) {
+    margin-right: 10px;
+    }
   }
 
   .nav {
@@ -52,15 +79,6 @@ export const Container = styled.div`
     background-repeat: no-repeat;
   }
 
-  .logo {
-    background-image: url(${logo});
-    height: 40px;
-    width: 250px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
   .moon {
     background-image: url(${moon});
     height: 16px;
@@ -68,8 +86,10 @@ export const Container = styled.div`
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 0px;
-
+    
+    @media only screen and (max-width: 360px) {
+    margin-left: 3px;
+    }
   }
 
 `

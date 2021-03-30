@@ -14,31 +14,28 @@ const Header: React.FC<Props> = ({ toggleTheme}) => {
   return(
     <Container>
       <div className="logo" />
-
-      <div className="menu">
-        <div className="navigation">
+      <div className="navigation">
         <a href="#" className="nav">Sobre mim</a>
         <a href="#" className="nav">Skills</a>
         <a href="#" className="nav">Projetos</a>
         <a href="#" className="nav">Contato</a>
       </div>
-
       <div className="switch">
-          <div className="sun" />
-          <Switch 
-            onChange={toggleTheme}
-            checked={title === 'dark'}
-            checkedIcon={false}
-            uncheckedIcon={false}
-            height={10}
-            width={40}
-            handleDiameter={20}
-            onColor={colors.bluePantone}
-            offColor={shade(0.30, colors.header)}
-           />
-          <div className="moon" />
-        </div>
+        <div className="sun" />
+        <Switch 
+          onChange={toggleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={10}
+          width={40}
+          handleDiameter={20}
+          onColor={colors.bluePantone}
+          offColor={shade(0.30, colors.background)}
+          />
+        <div className="moon" />
       </div>
+
 
       
     </Container>

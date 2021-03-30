@@ -5,11 +5,9 @@ export default {
 
     bluePantone: '#3548BF',
     mango: '#EEC643',
-    stroke: "#0B2653",
-      
+    stroke: "#E9E9E9",
+    header: "#6372D3",      
     background: '#EEF0F2',
-    header: '#3548BF',
-
     text: '#141414',
     text2: '#EEF0F2',
   }

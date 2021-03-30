@@ -7,10 +7,8 @@ declare module 'styled-components' {
       bluePantone: string;
       mango: string;
       stroke: string;
-      
+      header: string;      
       background: string;
-      header: string;
-
       text: string;
       text2: string;
     }
