@@ -7,7 +7,12 @@ import dark from './styles/themes/dark';
 
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
+import About from './components/About';
+import Contact from './components/Contact';
 import Main from './components/Main';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import { BrowserRouter } from 'react-router-dom';;
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -18,11 +23,17 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <GlobalStyle />
-        <Header toggleTheme={toggleTheme}/>
-        <Main />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <GlobalStyle />
+          <Header toggleTheme={toggleTheme}/>
+          <Main />
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+        </div>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

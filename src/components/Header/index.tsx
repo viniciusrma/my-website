@@ -5,6 +5,7 @@ import { Container } from './styles';
 import  Switch  from 'react-switch';
 import {ThemeContext} from 'styled-components';
 import { shade } from 'polished';
+import { Link } from 'react-router-dom';
 interface Props {
   toggleTheme(): void
 }
@@ -13,13 +14,18 @@ const Header: React.FC<Props> = ({ toggleTheme}) => {
   const { colors, title } = useContext(ThemeContext);
   return(
     <Container>
-      <div className="logo" />
+      <Link to={"/"}>
+        <div className="logo" />
+      </Link>
+      
+      
       <div className="navigation">
-        <a href="#" className="nav">Sobre mim</a>
-        <a href="#" className="nav">Skills</a>
-        <a href="#" className="nav">Projetos</a>
-        <a href="#" className="nav">Contato</a>
+        <Link to="/about" className="nav"> Sobre mim </Link>
+        <Link to="/skills" className="nav"> Skills </Link>
+        <Link to="/projects" className="nav"> Projects </Link>
+        <Link to="/contact" className="nav"> Contato </Link>
       </div>
+      
       <div className="switch">
         <div className="sun" />
         <Switch 

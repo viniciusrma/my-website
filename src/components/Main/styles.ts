@@ -27,12 +27,13 @@ export const Container = styled.div`
   color: ${props => props.theme.colors.text};
   display: flex;
   align-items: center;
-  padding: 0 400px;
+  padding: 0 400px 100px 400px;
   justify-content: space-between;
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
   font-weight: 600;
   height: 100%;
+  min-height: 91vh;
 
   a {
     text-decoration: none;
@@ -40,8 +41,7 @@ export const Container = styled.div`
   }
 
   .section {
-    margin-top: 60px;
-    margin-right:50px;
+    margin: 100px 50px;
 
     @media only screen and (max-width: 360px) {
       padding: 0 20px;
@@ -115,7 +115,7 @@ export const Container = styled.div`
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 60px;
+    margin-top: 50px;
 
     @media only screen and (max-width: 960px) {
       margin-right: 0px;

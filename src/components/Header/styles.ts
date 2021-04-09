@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 
 
-  height: 80px;
+  height: 9vh;
   background: ${props => props.theme.colors.header};
   color: ${props => props.theme.colors.text};
   display: flex;
