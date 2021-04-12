@@ -30,7 +30,7 @@ export const Container = styled.div`
   padding: 0 400px 100px 400px;
   justify-content: space-between;
   font-family: 'Nunito', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   height: 100%;
   min-height: 91vh;
