@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 import Main from './components/Main';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import { BrowserRouter } from 'react-router-dom';;
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -26,11 +26,11 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <GlobalStyle />
-          <Header toggleTheme={toggleTheme}/>
+          <Header toggleTheme={toggleTheme} />
           <Main />
           <About />
-          <Projects />
           <Skills />
+          <Projects />
           <Contact />
         </div>
       </BrowserRouter>
